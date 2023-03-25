@@ -18,7 +18,7 @@ def select_all():
     results = run_sql(sql)
     for row in results:
         platform = platform_repository.select(row['platform_id'])
-        weapon = weapon_repository.select(row['platform_id'])
+        weapon = weapon_repository.select(row['weapon_id'])
         codprofile = CodProfile (row['gamer_tag'], row['kills'],row['deaths'], row['rank'], platform, weapon, row['id'])
         codprofiles.append(codprofile)
     return codprofiles
@@ -31,11 +31,11 @@ def select(id):
 
     if len(results) > 0:
         selected_codprofile = results[0]
-        user = platform_repository.select(selected_codprofile['user_id'])
+        platform = platform_repository.select(selected_codprofile['platform_id'])
         weapon = weapon_repository.select(selected_codprofile['weapon_id'])
         codprofile = CodProfile (selected_codprofile['gamer_tag'], selected_codprofile['kills'],
                                  selected_codprofile['deaths'], selected_codprofile['rank'],
-                                    user, weapon, selected_codprofile['id'])
+                                    platform, weapon, selected_codprofile['id'])
     return codprofile
 
 def delete(id):
@@ -44,6 +44,6 @@ def delete(id):
     run_sql(sql, values)
 
 def update(codprofile):
-    sql = "UPDATE codprofiles SET (gamer_tag, kills, deaths, rank, user_id, weapon_id) VALUES (%s, %s, %s, %s, %s, %s) WHERE id = %s"
-    values = [codprofile.gamer_tag, codprofile.kills, codprofile.deaths, codprofile.rank,codprofile.user_id, codprofile.weapon_id]
+    sql = "UPDATE codprofiles SET (gamer_tag, kills, deaths, rank, platform_id, weapon_id) VALUES (%s, %s, %s, %s, %s, %s) WHERE id = %s"
+    values = [codprofile.gamer_tag, codprofile.kills, codprofile.deaths, codprofile.rank,codprofile.platform_id, codprofile.weapon_id]
     run_sql(sql, values)
