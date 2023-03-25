@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, redirect
 from repositories import cod_profile_repository
-from repositories import user_repository
+from repositories import platform_repository
 from repositories import weapon_repository
 from models.cod_profile import CodProfile
 

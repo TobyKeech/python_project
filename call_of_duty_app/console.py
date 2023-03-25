@@ -2,18 +2,18 @@ from models.cod_profile import CodProfile
 from models.platform import Platform
 from models.weapon import Weapon
 
-import repositories.user_repository as user_repository
+import repositories.platform_repository as platform_repository
 import repositories.weapon_repository as weapon_repository
 import repositories.cod_profile_repository as codprofile_repository
 
 platform1 = Platform("PS5")
-user_repository.save(platform1)
+platform_repository.save(platform1)
 
 platform2 = Platform("Xbox")
-user_repository.save(platform2)
+platform_repository.save(platform2)
 
 platform3 = Platform("PC")
-user_repository.save(platform3)
+platform_repository.save(platform3)
 
 weapon1 = Weapon("ISO Hemlock", "Assualt Rifle", "mid caliber", "medium")
 weapon_repository.save(weapon1)
