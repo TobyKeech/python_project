@@ -1,5 +1,4 @@
 from db.run_sql import run_sql
-from models.cod_profile import CodProfile
 from models.platform import Platform
 
 def save(platform):

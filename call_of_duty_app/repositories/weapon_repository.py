@@ -1,6 +1,4 @@
 from db.run_sql import run_sql
-from models.cod_profile import CodProfile
-from models.platform import User
 from models.weapon import Weapon
 
 def save(weapon):

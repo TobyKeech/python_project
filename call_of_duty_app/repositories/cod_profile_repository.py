@@ -1,6 +1,5 @@
 from db.run_sql import run_sql
 from models.cod_profile import CodProfile
-
 import repositories.platform_repository as platform_repository
 import repositories.weapon_repository as weapon_repository
 

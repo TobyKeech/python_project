@@ -5,8 +5,7 @@ DROP TABLE IF EXISTS weapons;
 
 CREATE TABLE platforms (
   id SERIAL PRIMARY KEY,
- type VARCHAR(255),
-  age INT
+ type VARCHAR(255)
 );
 
 CREATE TABLE weapons (
