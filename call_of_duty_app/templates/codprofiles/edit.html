@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Update a Cod Profile</h2>
+
+<form action="/codprofiles/{{ codprofile.id }}" method="POST">
+    <div>
+        <label for="gamer_tag"> Gamer Tag:</label>
+        <input type="text" id="gamer_tag" name="gamer_tag" value="{{ codprofile.gamer_tag }}">
+    </div>
+
+    <div>
+        <label for="kills"> Kills:</label>
+        <input type="text" id="kills" name="kills" value="{{ codprofile.kills }}">
+    </div>
+
+    <div>
+        <label for="deaths"> Deaths:</label>
+        <input type="text" id="deaths" name="deaths" value="{{ codprofile.deaths }}">
+    </div>
+
+    <div>
+        <label for="rank"> Rank:</label>
+        <input type="text" id="rank" name="ranks" value="{{ codprofile.rank }}">
+    </div>
+
+    <input type="submit">
+    </div>
+</form>
+
+
+
+
+{% endblock%}

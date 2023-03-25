@@ -28,6 +28,12 @@ def new_profile():
     weapons = weapon_repository.select_all()
     return render_template("/codprofiles/new.html", all_weapons = weapons)
 
+# @codprofiles_blueprint.route("/codprofiles/<id>/edit")
+# def edit_profile(id):
+#     codprofile = cod_profile_repository.select(id)
+#     weapons = weapon_repository.select_all()
+#     return render_template("/codprofiles/edit.html", codprofile= codprofile, all_weapons = weapons)
+
 @codprofiles_blueprint.route("/codprofiles", methods=['POST'])
 def create_codprofile():
     gamer_tag = request.form['gamer_tag']
@@ -41,3 +47,18 @@ def create_codprofile():
     new_codprofile = CodProfile(gamer_tag, kills, deaths, rank, user, weapon)
     cod_profile_repository.save(new_codprofile)
     return redirect('/codprofiles')
+
+# @codprofiles_blueprint.route("/codprofiles/<id>", methods=["POST"])
+# def update_codprofile(id):
+#     gamer_tag = request.form["gamer_tag"]
+#     kills = request.form['kills']
+#     deaths = request.form['deaths']
+#     rank = request.form['rank']
+#     user = request.form['user']
+#     weapon_id = request.form['weapon_id']
+
+#     weapon = weapon_repository.select(weapon_id)
+#     codprofile = CodProfile(gamer_tag, kills, deaths, rank, user, weapon,id)
+
+#     cod_profile_repository.update(codprofile)
+#     return redirect("/codprofiles")

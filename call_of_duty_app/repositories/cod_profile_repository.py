@@ -1,6 +1,5 @@
 from db.run_sql import run_sql
 from models.cod_profile import CodProfile
-from models.user import User
 
 import repositories.user_repository as user_repository
 import repositories.weapon_repository as weapon_repository
@@ -42,4 +41,9 @@ def select(id):
 def delete(id):
     sql = "DELETE  FROM codprofiles WHERE id = %s"
     values = [id]
+    run_sql(sql, values)
+
+def update(codprofile):
+    sql = "UPDATE codprofiles SET (gamer_tag, kills, deaths, rank, user_id, weapon_id) VALUES (%s, %s, %s, %s, %s, %s) WHERE id = %s"
+    values = [codprofile.gamer_tag, codprofile.kills, codprofile.deaths, codprofile.rank,codprofile.user_id, codprofile.weapon_id]
     run_sql(sql, values)

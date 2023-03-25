@@ -1,12 +1,11 @@
 DROP TABLE IF EXISTS codprofiles;
-DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS platforms;
 DROP TABLE IF EXISTS weapons;
 
 
-CREATE TABLE users (
+CREATE TABLE platforms (
   id SERIAL PRIMARY KEY,
-  first_name VARCHAR(255),
-  last_name VARCHAR(255),
+ type VARCHAR(255),
   age INT
 );
 
@@ -24,7 +23,7 @@ CREATE TABLE codprofiles (
     kills INT,
     deaths INT,
     rank VARCHAR(255), 
-    user_id INT NOT NULL REFERENCES users(id),
+    platform_id INT NOT NULL REFERENCES platforms(id),
     weapon_id INT NOT NULL REFERENCES weapons(id)
 );
 

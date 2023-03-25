@@ -1,6 +1,6 @@
 from db.run_sql import run_sql
 from models.cod_profile import CodProfile
-from models.user import User
+from models.platform import User
 
 def save(user):
     sql = "INSERT INTO users (first_name, last_name, age) VALUES (%s, %s, %s) RETURNING *"
