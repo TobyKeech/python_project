@@ -32,9 +32,9 @@ def select(id):
 
     if len(results) > 0:
         selected_codprofile = results[0]
-        user = user = user_repository.select(selected_codprofile['user_id'])
-        weapon = weapon_repository.select(selected_codprofile['user_id'])
+        user = user_repository.select(selected_codprofile['user_id'])
+        weapon = weapon_repository.select(selected_codprofile['weapon_id'])
         codprofile = CodProfile (selected_codprofile['gamer_tag'], selected_codprofile['kills'],
                                  selected_codprofile['deaths'], selected_codprofile['rank'],
-                                   user, weapon, selected_codprofile['id'])
+                                    user, weapon, selected_codprofile['id'])
     return codprofile
