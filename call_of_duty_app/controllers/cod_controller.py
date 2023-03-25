@@ -27,27 +27,34 @@ def delete_profile(id):
 def new_profile():
     platforms = platform_repository.select_all()
     weapons = weapon_repository.select_all()
-    return render_template("/codprofiles/new.html", all_weapons = weapons, all_platforms = platforms)
+    return render_template("codprofiles/new.html", all_weapons = weapons, all_platforms = platforms)
 
-# @codprofiles_blueprint.route("/codprofiles/<id>/edit")
-# def edit_profile(id):
-#     codprofile = cod_profile_repository.select(id)
-#     weapons = weapon_repository.select_all()
-#     return render_template("/codprofiles/edit.html", codprofile= codprofile, all_weapons = weapons)
+@codprofiles_blueprint.route("/codprofiles", methods=['POST'])
+def create_codprofile():
+    gamer_tag = request.form['gamer_tag']
+    kills = request.form['kills']
+    deaths = request.form['deaths']
+    rank = request.form['rank']
 
-# @codprofiles_blueprint.route("/codprofiles", methods=['POST'])
-# def create_codprofile():
-#     gamer_tag = request.form['gamer_tag']
-#     kills = request.form['kills']
-#     deaths = request.form['deaths']
-#     rank = request.form['rank']
-#     user = request.form['user']
-#     weapon_id = request.form['weapon_id']
+    platform_id = request.form['platform']
+    platform = platform_repository.select(platform_id)
 
-#     weapon = weapon_repository.select(weapon_id)
-#     new_codprofile = CodProfile(gamer_tag, kills, deaths, rank, user, weapon)
-#     cod_profile_repository.save(new_codprofile)
-#     return redirect('/codprofiles')
+    weapon_id = request.form['weapon_id']
+    weapon = weapon_repository.select(weapon_id)
+    
+    
+    new_codprofile = CodProfile(gamer_tag, kills, deaths, rank, platform, weapon)
+    cod_profile_repository.save(new_codprofile)
+    return redirect("/codprofiles")
+
+@codprofiles_blueprint.route("/codprofiles/<id>/edit")
+def edit_profile(id):
+    codprofile = cod_profile_repository.select(id)
+    platforms = platform_repository.select_all()
+    weapons = weapon_repository.select_all()
+    return render_template("codprofiles/edit.html", codprofile= codprofile, all_weapons = weapons, all_platforms = platforms)
+
+
 
 # @codprofiles_blueprint.route("/codprofiles/<id>", methods=["POST"])
 # def update_codprofile(id):

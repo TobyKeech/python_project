@@ -1,16 +1,23 @@
 {% extends 'base.html' %}
 {%block content%}
+
+<h2> Add a new Cod Profile</h2>
+
 <form action="/codprofiles" method="post">
     <div>
         <label for="gamer_tag"><b>Gamer Tag</b>:</label>
         <input type="text" id="gamer_tag" name="gamer_tag" placeholder="Gamer Tag" required autofocus>
       </div>
     
-    <div>
-        <label for="user"><b>Real Name</b>:</label>
-        <input type="text" id="user" name="user" placeholder="Real Name" required autofocus>
+      <div>
+        <label for="platform"><b>Platform</b>:</label>
+        <select id="platform" name="platform">
+          <option value =' '></option>
+          {% for platform in all_platforms %}
+            <option value="{{ platform.id }}">{{ platform.type }}</option>
+          {% endfor %}
+        </select>
     </div>
-
     <div>
         <label for="kills"><b>Total Kills</b>:</label>
         <input type="text" id="kills" name="kills" placeholder="Total Kills" required>
@@ -36,6 +43,6 @@
         </select>
     </div>
       <button type="submit">Add Cod Profile</button>
-
-  </form> 
+</form> 
+  
 {%endblock%}
