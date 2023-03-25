@@ -3,12 +3,14 @@
     <h1>Cod Profiles</h1>
     {% for codprofile in all_codprofiles %}
     <div>
+        <hr>
         <p> <a href ='/profiles/{{codprofile.id}}'>{{codprofile.gamer_tag}} </a></p>
-        <p>Real Name: {{codprofile.user.first_name}} {{codprofile.user.last_name}}</p>
-        <p> Total Kills : {{codprofile.kills}} </p>
-        <p> Total Deaths{{codprofile.deaths}}</p>
-        <p> Current Rank: {{codprofile.rank}}</p>
-        <p> Weapon Assigned: {{codprofile.weapon.name}}, {{codprofile.weapon.type}}</p>
+        <p><b>Real Name</b> : {{codprofile.user.first_name}} {{codprofile.user.last_name}}</p>
+        <p><b>Total Kills</b> : {{codprofile.kills}} </p>
+        <p><b>Total Deaths</b> : {{codprofile.deaths}}</p>
+        <p><b>Current Rank</b> : {{codprofile.rank}}</p>
+        <p><b>Weapon Assigned</b> : {{codprofile.weapon.name}}, {{codprofile.weapon.type}}</p>
+        <hr>
     </div>
 
     {% endfor %}
