@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect
 from repositories import cod_profile_repository
-# from repositories import user_repositoriy
-# from repositories import weapon_repositoriy
+from repositories import user_repository
+from repositories import weapon_repository
 from models.cod_profile import CodProfile
 
 from flask import Blueprint
@@ -22,3 +22,22 @@ def show_profile(id):
 def delete_profile(id):
     cod_profile_repository.delete(id)
     return(redirect("/codprofiles"))
+
+@codprofiles_blueprint.route("/codprofiles/new")
+def new_profile():
+    weapons = weapon_repository.select_all()
+    return render_template("/codprofiles/new.html", all_weapons = weapons)
+
+@codprofiles_blueprint.route("/codprofiles", methods=['POST'])
+def create_codprofile():
+    gamer_tag = request.form['gamer_tag']
+    kills = request.form['kills']
+    deaths = request.form['deaths']
+    rank = request.form['rank']
+    user = request.form['user']
+    weapon_id = request.form['weapon_id']
+
+    weapon = weapon_repository.select(weapon_id)
+    new_codprofile = CodProfile(gamer_tag, kills, deaths, rank, user, weapon)
+    cod_profile_repository.save(new_codprofile)
+    return redirect('/codprofiles')
