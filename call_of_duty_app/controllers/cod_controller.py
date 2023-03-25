@@ -18,3 +18,7 @@ def show_profile(id):
     codprofile = cod_profile_repository.select(id)
     return render_template("codprofiles/show.html", solo_profile= codprofile)
 
+@codprofiles_blueprint.route("/codprofiles/<id>/delete", methods=['POST'])
+def delete_profile(id):
+    cod_profile_repository.delete(id)
+    return(redirect("/codprofiles"))

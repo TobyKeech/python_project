@@ -38,3 +38,8 @@ def select(id):
                                  selected_codprofile['deaths'], selected_codprofile['rank'],
                                     user, weapon, selected_codprofile['id'])
     return codprofile
+
+def delete(id):
+    sql = "DELETE  FROM codprofiles WHERE id = %s"
+    values = [id]
+    run_sql(sql, values)
