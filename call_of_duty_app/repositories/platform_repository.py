@@ -20,7 +20,7 @@ def select_all():
 
 def select(id):
     platform = None
-    sql = "SELECT * FROM platfroms WHERE id = %s"
+    sql = "SELECT * FROM platforms WHERE id = %s"
     values = [id]
     results = run_sql(sql, values)
     if results:
