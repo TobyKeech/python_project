@@ -4,8 +4,8 @@ DROP TABLE IF EXISTS weapons;
 
 
 CREATE TABLE platforms (
-  id SERIAL PRIMARY KEY,
- type VARCHAR(255)
+    id SERIAL PRIMARY KEY,
+    type VARCHAR(255)
 );
 
 CREATE TABLE weapons (

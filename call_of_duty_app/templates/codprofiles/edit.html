@@ -5,26 +5,45 @@
 
 <form action="/codprofiles/{{ codprofile.id }}" method="POST">
     <div>
-        <label for="gamer_tag"> Gamer Tag:</label>
+        <label for="gamer_tag"> Change Gamer Tag:</label>
         <input type="text" id="gamer_tag" name="gamer_tag" value="{{ codprofile.gamer_tag }}">
     </div>
 
     <div>
-        <label for="kills"> Kills:</label>
-        <input type="text" id="kills" name="kills" value="{{ codprofile.kills }}">
+        <label for="paltform"> <b>Update Platform </b>:</label>
+        <select id="platform" name="platform_id">
+          <option value =' '></option>
+          {% for platform in all_platforms %}
+            <option value="{{ platform.id }}">{{ platform.type }} </option>
+          {% endfor %}
+        </select>
     </div>
 
     <div>
-        <label for="deaths"> Deaths:</label>
-        <input type="text" id="deaths" name="deaths" value="{{ codprofile.deaths }}">
+        <label for="kills"> Increase Kills Confirmed:</label>
+        <input type="number" id="kills" name="kills" value="{{ codprofile.kills }}">
     </div>
 
     <div>
-        <label for="rank"> Rank:</label>
-        <input type="text" id="rank" name="ranks" value="{{ codprofile.rank }}">
+        <label for="deaths"> Current Deaths:</label>
+        <input type="number" id="deaths" name="deaths" value="{{ codprofile.deaths }}">
     </div>
 
-    <input type="submit">
+    <div>
+        <label for="rank"> Adjust Rank:</label>
+        <input type="number" id="rank" name="rank" value="{{ codprofile.rank }}">
+    </div>
+
+    <div>
+        <label for="weapon"> <b>Weapon Assigned </b>:</label>
+        <select id="weapon" name="weapon_id">
+          <option value =' '></option>
+          {% for weapon in all_weapons %}
+            <option value="{{ weapon.id }}">{{ weapon.name }}, {{weapon.type}} </option>
+          {% endfor %}
+        </select>
+    </div>
+    <button type="submit"> Update </button>
     </div>
 </form>
 

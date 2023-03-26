@@ -7,11 +7,11 @@
     <div>
         <label for="gamer_tag"><b>Gamer Tag</b>:</label>
         <input type="text" id="gamer_tag" name="gamer_tag" placeholder="Gamer Tag" required autofocus>
-      </div>
+    </div>
     
-      <div>
+    <div>
         <label for="platform"><b>Platform</b>:</label>
-        <select id="platform" name="platform">
+        <select id="platform" name="platform_id">
           <option value =' '></option>
           {% for platform in all_platforms %}
             <option value="{{ platform.id }}">{{ platform.type }}</option>
@@ -20,17 +20,17 @@
     </div>
     <div>
         <label for="kills"><b>Total Kills</b>:</label>
-        <input type="text" id="kills" name="kills" placeholder="Total Kills" required>
+        <input type="number" id="kills" name="kills" placeholder="Total Kills" required>
     </div>
 
     <div>
         <label for="deaths"><b>Total Deaths</b>:</label>
-        <input type="text" id="deaths" name="deaths" placeholder="Total Deaths" required>
+        <input type="number" id="deaths" name="deaths" placeholder="Total Deaths" required>
     </div>
 
     <div>
         <label for="rank"><b>Current Rank</b>:</label>
-        <input type="text" id="rank" name="rank" placeholder="Current Rank" required>
+        <input type="number" id="rank" name="rank" placeholder="Current Rank" required>
     </div>
 
     <div>
@@ -38,11 +38,11 @@
         <select id="weapon" name="weapon_id">
           <option value =' '></option>
           {% for weapon in all_weapons %}
-            <option value="{{ weapon.id }}">{{ weapon.name }}, {{weapon.type}}</option>
+            <option value="{{ weapon.id }}">{{ weapon.name }}, {{weapon.type}} </option>
           {% endfor %}
         </select>
     </div>
-      <button type="submit">Add Cod Profile</button>
+      <button type="submit"> Add Cod Profile </button>
 </form> 
   
 {%endblock%}
