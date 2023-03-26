@@ -60,7 +60,6 @@ def update_codprofile(id):
     platform = platform_repository.select(platform_id)
     weapon_id = request.form['weapon_id']
     weapon = weapon_repository.select(weapon_id)
-    print(weapon.id)
     codprofile = CodProfile(gamer_tag, kills, deaths, rank, platform, weapon, id)
     cod_profile_repository.update(codprofile)
     return redirect("/codprofiles")

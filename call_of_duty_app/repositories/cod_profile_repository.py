@@ -44,5 +44,5 @@ def delete(id):
 
 def update(codprofile):
     sql = "UPDATE codprofiles SET (gamer_tag, kills, deaths, rank, platform_id, weapon_id) = (%s, %s, %s, %s, %s, %s) WHERE id = %s"
-    values = [codprofile.gamer_tag, codprofile.kills, codprofile.deaths, codprofile.rank, codprofile.platform.id, codprofile.weapon.id]
+    values = [codprofile.gamer_tag, codprofile.kills, codprofile.deaths, codprofile.rank, codprofile.platform.id, codprofile.weapon.id, codprofile.id]
     run_sql(sql, values)
