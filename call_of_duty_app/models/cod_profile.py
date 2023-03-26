@@ -7,3 +7,7 @@ class CodProfile:
         self.platform=platform
         self.weapon=weapon
         self.id=id
+
+    def calculate_kd_ratio(self) -> float:
+            kd_ratio = self.kills / self.deaths
+            return round(kd_ratio, 2)  # round to two decimal places  

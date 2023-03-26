@@ -21,7 +21,7 @@ CREATE TABLE codprofiles (
     gamer_tag VARCHAR(255),
     kills INT,
     deaths INT,
-    rank VARCHAR(255), 
+    rank INT, 
     platform_id INT NOT NULL REFERENCES platforms(id),
     weapon_id INT NOT NULL REFERENCES weapons(id)
 );
