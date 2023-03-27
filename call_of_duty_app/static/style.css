@@ -1,4 +1,12 @@
 
+body{
+    background-image: url("/static/assets/wallpaperflare.com_wallpaper (1).jpg");
+    background-size: 1300px;
+    position: relative;
+}
+a{
+    color: rgb(236,52,58);
+}
 .list{
     display: flex;
     justify-content: space-around;
@@ -11,6 +19,7 @@ h1{
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
+    color: #FFFFFF;
 }
 
 .newform{
