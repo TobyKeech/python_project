@@ -41,11 +41,32 @@ h1{
     flex-direction: column;
 }
 
-.profileform{
+.container{
         display: grid;
-        justify-content: space-around;
+        /* justify-content: space-around;
         align-items: center;
-        flex-direction: column;
+        flex-direction: column;   */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
 }
-        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 1.5rem; */
+
+.class{
+    width: 50px;
+}
+
+img {
+    width: 150px;
+}
+
+.profileform {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+
+}
+
+.inner-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
