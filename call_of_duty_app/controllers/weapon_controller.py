@@ -12,3 +12,8 @@ weapons_blueprint = Blueprint("weapons", __name__)
 def weapons():
     weapons = weapon_repository.select_all() 
     return render_template("weapons/index.html", all_weapons = weapons)
+
+@weapons_blueprint.route("/weapons/<id>")
+def show_weapon(id):
+    weapon = weapon_repository.select(id)
+    return render_template("weapons/show.html", solo_weapon= weapon)

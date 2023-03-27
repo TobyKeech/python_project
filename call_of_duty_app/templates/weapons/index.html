@@ -6,13 +6,8 @@
 
 <div>
     <hr>
-    <p><b>Weapon Name</b> : {{weapon.name}}</p>
-    <p><b>Weapon Category</b> : {{weapon.type}} </p>
-    <p><b>Total Death</b> : {{weapon.ammo}}</p>
-    <p><b>KD Ratio</b> : {{weapon.range}}</p>
+    <p><b>Weapon Name</b> : <a href ='/weapons/{{weapon.id}}'>{{weapon.name}} </a></p>
 </div>
 {% endfor %}
-
-
 
 {%endblock%}
