@@ -12,7 +12,7 @@
     <div>
         <label for="platform"><b>Platform</b>:</label>
         <select id="platform" name="platform_id">
-          <option value =' '></option>
+          <option value =' '> Choose Platform</option>
           {% for platform in all_platforms %}
             <option value="{{ platform.id }}">{{ platform.type }}</option>
           {% endfor %}
@@ -36,7 +36,7 @@
     <div>
         <label for="weapon"><b>Weapon Assigned</b>:</label>
         <select id="weapon" name="weapon_id">
-          <option value =' '></option>
+          <option value =' '> Choose Weapon</option>
           {% for weapon in all_weapons %}
             <option value="{{ weapon.id }}">{{ weapon.name }}, {{weapon.type}} </option>
           {% endfor %}
