@@ -3,8 +3,9 @@
 
 <h1>Weapon Inventory</h1>
 {% for weapon in all_weapons %}
+<hr>
 
-<div>
+<div class="weaponindex">
     <hr>
     <p><b>Weapon Name</b> : <a href ='/weapons/{{weapon.id}}'>{{weapon.name}} </a></p>
 </div>

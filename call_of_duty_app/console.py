@@ -36,15 +36,21 @@ weapon_repository.save(weapon4)
 weapon5 = Weapon("MP5", "Submachine Gun", "high velocity", "close")
 weapon_repository.save(weapon5)
 
-codprofile1 = CodProfile("BlackRaven", "2434", "1487", "345", platform1, weapon1)
+weapon6 = Weapon("P90", "Submachine Gun", "high velocity", "close")
+weapon_repository.save(weapon6)
+
+weapon7 = Weapon("SPX 80", "Sniper", "high velocity", "long")
+weapon_repository.save(weapon7)
+
+codprofile1 = CodProfile("BlackRaven", "3800", "1200", "450", platform1, weapon1)
 codprofile_repository.save(codprofile1)
 
-codprofile2 = CodProfile("MikeyFrbz", "1600", "1400", "450", platform3, weapon2)
+codprofile2 = CodProfile("MikeyFrbz", "1600", "1400", "300", platform3, weapon2)
 codprofile_repository.save(codprofile2)
 
-codprofile3 = CodProfile("Mister Lucky Lee", "1500", "1200", "450", platform2, weapon3)
+codprofile3 = CodProfile("Mister Lucky Lee", "1500", "1200", "200", platform2, weapon3)
 codprofile_repository.save(codprofile3)
 
-codprofile4 = CodProfile("LukeatmyStick", "500", "1000", "250", platform4, weapon4)
+codprofile4 = CodProfile("LukeatmyStick", "500", "1000", "500", platform4, weapon4)
 codprofile_repository.save(codprofile4)
 

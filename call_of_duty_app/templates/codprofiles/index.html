@@ -2,7 +2,7 @@
 {% block content %}
     <h1>Cod Profiles</h1>
     {% for codprofile in all_codprofiles %}
-    <div>
+    <div class="profileform">
         <hr>
         <p> <a href ='/codprofiles/{{codprofile.id}}'>{{codprofile.gamer_tag}} </a></p>
         <p><b>Platfrom</b> : {{codprofile.platform.type}}</p>
@@ -10,7 +10,8 @@
         <p><b>Total Deaths</b> : {{codprofile.deaths}}</p>
         <p><b>KD Ratio</b> : {{codprofile.calculate_kd_ratio()}}</p>
         <p><b>Current Rank</b> : {{codprofile.rank}}
-            <div>
+    </div>
+
                     {% if codprofile.rank >= 500%}
                     <img src = "/static/assets/DpLASMVUcAAak8y.jpg">
                     {% elif codprofile.rank < 500 and codprofile.rank >= 400 %}
@@ -22,7 +23,7 @@
                     {% elif codprofile.rank < 200 and codprofile.rank >= 100 %}
                     <img src = "/static/assets/Treyarch_2018-Oct-10-20.jpeg">
               {% endif %}
-            </div>
+    </div>
         
         </p>
     {% endfor %}
