@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 {% block content %}
 <div>
-    <hr>
         <h1>{{solo_weapon.name}}</h1>
         <div class="weaponshow">
+            <div class="weaponprofile">
         <p><b>Type</b> : {{solo_weapon.type}}</p>
         <p><b>Ammo</b> : {{solo_weapon.ammo}} </p>
         <p><b>Range</b> : {{solo_weapon.range}}</p>
+            </div>
         </div>
-    <hr>
 </div>
-
+<hr>
     
 {% endblock content %}

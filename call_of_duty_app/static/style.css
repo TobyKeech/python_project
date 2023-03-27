@@ -4,8 +4,15 @@ body{
     background-size: 1300px;
     position: relative;
 }
+ul{
+    color: white;
+}
+li{
+    color:#FFFFFF;
+}
 a{
-    color: rgb(236,52,58);
+    color: rgb(241,96,103);
+    font-size: medium;
 }
 .list{
     display: flex;
@@ -34,6 +41,7 @@ h1{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    margin-right: 570px;
 }
 
 .weaponindex{
@@ -41,6 +49,7 @@ h1{
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .indvprofile{
@@ -85,5 +94,14 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
+}
+
+.weaponprofile{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.16);
+    border-radius: 5px;
+    padding: 30px;
+    width: fit-content;
+    margin-left: 580px;
 }
