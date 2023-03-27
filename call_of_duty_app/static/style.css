@@ -105,3 +105,10 @@ img {
     width: fit-content;
     margin-left: 580px;
 }
+
+.invprofileform {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    padding: 50px;
+}

@@ -7,6 +7,18 @@
         <p><b>Type</b> : {{solo_weapon.type}}</p>
         <p><b>Ammo</b> : {{solo_weapon.ammo}} </p>
         <p><b>Range</b> : {{solo_weapon.range}}</p>
+        {% if solo_weapon.name == "ISO HEMLOCK"%}
+                        <img src = "/static/assets/DpLASMVUcAAak8y.jpg">
+                        {% elif solo_weapon.name  %}
+                        <img src = "/static/assets/Treyarch_2018-Oct-11.jpg">
+                        {% elif solo_weapon.name  %}
+                        <img src = "/static/assets/Treyarch_2018-Oct-10-3.jpg">
+                        {% elif solo_weapon.name %}
+                        <img src = "/static/assets/Treyarch_2018-Oct-10-1.jpg">
+                        {% elif solo_weapon.name%}
+                        <img src = "/static/assets/Treyarch_2018-Oct-10-20.jpeg">
+                  {% endif %}
+
             </div>
         </div>
 </div>
