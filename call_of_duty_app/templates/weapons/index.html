@@ -2,12 +2,14 @@
 {% block content %}
 
 <h1>Weapon Inventory</h1>
-<div class="weaponprofile">
+<div class="weaponindex">
 {% for weapon in all_weapons %}
 
-<div class="weaponindex">
+<div class="weaponprofile">
     <p><b>Weapon Name</b> : <a href ='/weapons/{{weapon.id}}'>{{weapon.name}} </a></p>
 </div>
 {% endfor %}
+
 </div>
+
 {%endblock%}

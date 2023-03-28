@@ -2,22 +2,27 @@
 {% block content %}
 <div>
         <h1>{{solo_weapon.name}}</h1>
-        <div class="weaponshow">
-            <div class="weaponprofile">
+        <div class="invweaponprofile">
+            <div class="invweaponshow">
+                {% if solo_weapon.name == "ISO Hemlock"%}
+                        <img src = "/static/assets/call-of-duty-warzone-2-iso-hemlock-loadout.jpg">
+                        {% elif solo_weapon.name == "Sakin" %}
+                        <img src = "/static/assets/Sakin-MG38-Warzone-2.jpeg">
+                        {% elif solo_weapon.name  == "M4" %}
+                        <img src = "/static/assets/best-modern-warfare-2-m4-loadout-attachments-perks.jpg">
+                        {% elif solo_weapon.name == "P90" %}
+                        <img src = "/static/assets/Best-PDSW-528-loadout-in-Warzone-2 copy 2.jpg">
+                        {% elif solo_weapon.name == "MP5"%}
+                        <img src = "/static/assets/best-mp5-lachmann-sub-loadout.jpg">
+                        {% elif solo_weapon.name == "SPX 80"%}
+                        <img src = "/static/assets/best-modern-warfare-2-sp-x-80-loadout-attachments-perks.jpg">
+                        {% elif solo_weapon.name == "Signal 50"%}
+                        <img src = "/static/assets/signal-50-best-loadout-modern-warfare-2-e1667558715325.jpg">
+
+                  {% endif %}
         <p><b>Type</b> : {{solo_weapon.type}}</p>
         <p><b>Ammo</b> : {{solo_weapon.ammo}} </p>
         <p><b>Range</b> : {{solo_weapon.range}}</p>
-        {% if solo_weapon.name == "ISO HEMLOCK"%}
-                        <img src = "/static/assets/DpLASMVUcAAak8y.jpg">
-                        {% elif solo_weapon.name  %}
-                        <img src = "/static/assets/Treyarch_2018-Oct-11.jpg">
-                        {% elif solo_weapon.name  %}
-                        <img src = "/static/assets/Treyarch_2018-Oct-10-3.jpg">
-                        {% elif solo_weapon.name %}
-                        <img src = "/static/assets/Treyarch_2018-Oct-10-1.jpg">
-                        {% elif solo_weapon.name%}
-                        <img src = "/static/assets/Treyarch_2018-Oct-10-20.jpeg">
-                  {% endif %}
 
             </div>
         </div>
