@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<div class="newindvprofile">
 <h2>Update a Cod Profile</h2>
+  <div class="newprofileform">
+    <div class="div2">
 
 <form action="/codprofiles/{{ codprofile.id }}" method="POST">
     <div>
@@ -45,6 +47,8 @@
     </div>
     <button type="submit"> Update </button>
     </div>
+  </div>
+  </div>
 </form>
 
 

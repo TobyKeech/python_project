@@ -5,7 +5,7 @@
     {% for codprofile in all_codprofiles %}
     <div class="profileform">
         <div class="inner-cont">
-            <p> <a href ='/codprofiles/{{codprofile.id}}'>{{codprofile.gamer_tag}} </a></p>
+            <p><b><a href ='/codprofiles/{{codprofile.id}}'>{{codprofile.gamer_tag}} </a></b></p>
             <p><b>Platform</b> : {{codprofile.platform.type}}</p>
             <p><b>Total Kills</b> : {{codprofile.kills}} </p>
             <p><b>Total Deaths</b> : {{codprofile.deaths}}</p>
