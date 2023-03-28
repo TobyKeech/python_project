@@ -11,6 +11,10 @@ li{
     color:#FFFFFF;
 }
 a{
+    cursor: pointer;
+    color:rgb(235,52,60);
+}
+/* a{
     color: rgb(237,97,103);
     font-size: small;
     font-size:130%;
@@ -18,7 +22,7 @@ a{
     background-color: whitesmoke;
     border-radius: 2.5px;
     opacity: 0.7;
-}
+} */
 
 h1{
     display: flex;
@@ -176,4 +180,108 @@ p{
     position: fixed;
     bottom: 0;
     width: 100%;
+  }
+
+  /* not my css and some fun things from google */
+
+  .btn {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 5px .2px #00000035;
+    box-shadow: 1px 1px 5px .2px #00000035;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    transition-delay: .2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+  }
+  
+  .btn:hover {
+    width: 150px;
+    transition-delay: .2s;
+  }
+  
+  .btn:hover > .paragraph {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+  }
+  
+  .btn:hover > .icon-wrapper .icon {
+    transform: scale(1.1);
+  }
+  
+  .bnt:hover > .icon-wrapper .icon path {
+    stroke: black;
+  }
+  
+  .paragraph {
+    color: black;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 18px;
+    margin-right: 20px;
+    padding-left: 20px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .icon-wrapper {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon {
+    transform: scale(.9);
+    transition: .2s linear;
+  }
+  
+  .icon path {
+    stroke: #000;
+    stroke-width: 2px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+
+  .button2 {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #040404;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .button2:hover {
+    background-color: #151616;
+    box-shadow: 0 0 20px #6fc5ff50;
+  }
+  
+  .button2:active {
+    background-color: #000000;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
   }
