@@ -22,11 +22,15 @@ h1{
     color: #FFFFFF;
 }
 
-div>img{
+img{
     max-width:215px;
     height:auto;
 }
+.weaponimage{
+    max-width:215px;
+    height:auto;
 
+}
 p{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -137,8 +141,8 @@ p{
     box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
     padding: 50px;
-    font-size: 20px;
-    margin: 70px;
+    font-size: 40px;
+    margin: 0px;
 }
 
   .input {
@@ -276,3 +280,35 @@ p{
     -webkit-transition: all 0.25s;
     box-shadow: none;
   }
+
+  img[src = "/static/assets/call-of-duty-warzone-2-iso-hemlock-loadout.jpg"] {
+    max-width: 1000px;
+    height:auto;
+  }
+  img[src = "/static/assets/Sakin-MG38-Warzone-2.jpeg"] {
+    max-width: 1000px;
+    height:auto;
+  }
+
+  img[src = "/static/assets/best-modern-warfare-2-m4-loadout-attachments-perks.jpg"] {
+    max-width: 1000px;
+    height:auto;
+  }
+
+  img[src = "/static/assets/Best-PDSW-528-loadout-in-Warzone-2 copy 2.jpg"] {
+    max-width: 1000px;
+    height:auto;
+  }
+  img[src = "/static/assets/best-mp5-lachmann-sub-loadout.jpg"] {
+    max-width: 1000px;
+    height:auto;
+  }
+  img[src = "/static/assets/best-modern-warfare-2-sp-x-80-loadout-attachments-perks.jpg"] {
+    max-width: 1000px;
+    height:auto;
+  }
+  img[src = "/static/assets/signal-50-best-loadout-modern-warfare-2-e1667558715325.jpg"] {
+    max-width: 1000px;
+    height:auto;
+  }
+
