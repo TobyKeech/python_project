@@ -6,9 +6,11 @@ body{
 }
 ul{
     color: white;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif
 }
 li{
     color:#FFFFFF;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif
 }
 a{
     cursor: pointer;
@@ -20,6 +22,7 @@ h1{
     align-items: center;
     list-style-type: none;
     color: #FFFFFF;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif
 }
 
 img{
@@ -32,7 +35,7 @@ img{
 
 }
 p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif
 }
 
 .list{
@@ -155,7 +158,7 @@ p{
     border-radius: 0.4vw;
     border: none;
     outline: none;
-    padding: 0.4vw;
+    padding: 0.7vw;
     max-width: 190px;
     transition: .4s;
   }
@@ -282,33 +285,33 @@ p{
   }
 
   img[src = "/static/assets/call-of-duty-warzone-2-iso-hemlock-loadout.jpg"] {
-    max-width: 1000px;
+    max-width: 800px;
     height:auto;
   }
   img[src = "/static/assets/Sakin-MG38-Warzone-2.jpeg"] {
-    max-width: 1000px;
+    max-width: 800px;
     height:auto;
   }
 
   img[src = "/static/assets/best-modern-warfare-2-m4-loadout-attachments-perks.jpg"] {
-    max-width: 1000px;
+    max-width: 800px;
     height:auto;
   }
 
   img[src = "/static/assets/Best-PDSW-528-loadout-in-Warzone-2 copy 2.jpg"] {
-    max-width: 1000px;
+    max-width: 800px;
     height:auto;
   }
   img[src = "/static/assets/best-mp5-lachmann-sub-loadout.jpg"] {
-    max-width: 1000px;
+    max-width: 800px;
     height:auto;
   }
   img[src = "/static/assets/best-modern-warfare-2-sp-x-80-loadout-attachments-perks.jpg"] {
-    max-width: 1000px;
+    max-width: 800px;
     height:auto;
   }
   img[src = "/static/assets/signal-50-best-loadout-modern-warfare-2-e1667558715325.jpg"] {
-    max-width: 1000px;
+    max-width: 800px;
     height:auto;
   }
 
