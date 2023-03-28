@@ -9,12 +9,12 @@
 <form action="/codprofiles" method="post" class="newform">
     <div>
         <label for="gamer_tag"><b>Gamer Tag</b>:</label>
-        <input type="text" id="gamer_tag" name="gamer_tag" placeholder="Gamer Tag" required autofocus>
+        <input type="text" id="gamer_tag" name="gamer_tag" placeholder="Gamer Tag" class="input"required autofocus>
     </div>
-    
+
     <div>
         <label for="platform"><b>Platform</b>:</label>
-        <select id="platform" name="platform_id">
+        <select id="platform" name="platform_id" class="input">
           <option value =' '> Choose Platform</option>
           {% for platform in all_platforms %}
             <option value="{{ platform.id }}">{{ platform.type }}</option>
@@ -23,22 +23,22 @@
     </div>
     <div>
         <label for="kills"><b>Total Kills</b>:</label>
-        <input type="number" id="kills" name="kills" placeholder="Total Kills" required>
+        <input type="number" id="kills" name="kills" placeholder="Total Kills"class="input" required>
     </div>
 
     <div>
         <label for="deaths"><b>Total Deaths</b>:</label>
-        <input type="number" id="deaths" name="deaths" placeholder="Total Deaths" required>
+        <input type="number" id="deaths" name="deaths" placeholder="Total Deaths"class="input" required>
     </div>
 
     <div>
         <label for="rank"><b>Current Rank</b>:</label>
-        <input type="number" id="rank" name="rank" placeholder="Current Rank" required>
+        <input type="number" id="rank" name="rank" placeholder="Current Rank" class="input"required>
     </div>
 
     <div>
         <label for="weapon"><b>Weapon Assigned</b>:</label>
-        <select id="weapon" name="weapon_id">
+        <select id="weapon" name="weapon_id" class="input">
           <option value =' '> Choose Weapon</option>
           {% for weapon in all_weapons %}
             <option value="{{ weapon.id }}">{{ weapon.name }}, {{weapon.type}} </option>

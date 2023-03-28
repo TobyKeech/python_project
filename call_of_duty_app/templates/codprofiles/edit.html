@@ -7,14 +7,14 @@
 
 <form action="/codprofiles/{{ codprofile.id }}" method="POST">
     <div>
-        <label for="gamer_tag"> Change Gamer Tag:</label>
-        <input type="text" id="gamer_tag" name="gamer_tag" value="{{ codprofile.gamer_tag }}">
+        <label for="gamer_tag"> <b>Change Gamer Tag</b>:</label>
+        <input type="text" id="gamer_tag" name="gamer_tag" value="{{ codprofile.gamer_tag }}" class="input">
     </div>
 
     <div>
         <label for="paltform"> <b>Update Platform </b>:</label>
-        <select id="platform" name="platform_id">
-          <option value =' '></option>
+        <select id="platform" name="platform_id" class="input">
+          <option value =' '>Update Platform</option>
           {% for platform in all_platforms %}
             <option value="{{ platform.id }}">{{ platform.type }} </option>
           {% endfor %}
@@ -22,24 +22,24 @@
     </div>
 
     <div>
-        <label for="kills"> Increase Kills Confirmed:</label>
-        <input type="number" id="kills" name="kills" value="{{ codprofile.kills }}">
+        <label for="kills"> <b>Increase Kills Confirmed</b>:</label>
+        <input type="number" id="kills" name="kills" value="{{ codprofile.kills }}"class="input">
     </div>
 
     <div>
-        <label for="deaths"> Current Deaths:</label>
-        <input type="number" id="deaths" name="deaths" value="{{ codprofile.deaths }}">
+        <label for="deaths"> <b>Current Deaths</b>:</label>
+        <input type="number" id="deaths" name="deaths" value="{{ codprofile.deaths }}"class="input">
     </div>
 
     <div>
-        <label for="rank"> Adjust Rank:</label>
-        <input type="number" id="rank" name="rank" value="{{ codprofile.rank }}">
+        <label for="rank"> <b>Adjust Rank</b>:</label>
+        <input type="number" id="rank" name="rank" value="{{ codprofile.rank }}"class="input">
     </div>
 
     <div>
         <label for="weapon"> <b>Weapon Assigned </b>:</label>
-        <select id="weapon" name="weapon_id">
-          <option value =' '></option>
+        <select id="weapon" name="weapon_id" class="input">
+          <option value =' '> Update Weapon</option>
           {% for weapon in all_weapons %}
             <option value="{{ weapon.id }}">{{ weapon.name }}, {{weapon.type}} </option>
           {% endfor %}
