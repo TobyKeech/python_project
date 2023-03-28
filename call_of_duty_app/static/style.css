@@ -12,17 +12,7 @@ li{
 }
 a{
     cursor: pointer;
-    color:rgb(235,52,60);
 }
-/* a{
-    color: rgb(237,97,103);
-    font-size: small;
-    font-size:130%;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: whitesmoke;
-    border-radius: 2.5px;
-    opacity: 0.7;
-} */
 
 h1{
     display: flex;
@@ -272,6 +262,7 @@ p{
     font-weight: Bold;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+    cursor: pointer;
   }
   
   .button2:hover {
