@@ -180,6 +180,61 @@ label {
     margin: 50px;
 }
 
+  footer{
+    color: whitesmoke;
+    align-items: end;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  img[src = "/static/assets/call-of-duty-warzone-2-iso-hemlock-loadout.jpg"] {
+    max-width: 80%;
+    height:auto;
+  }
+  img[src = "/static/assets/Sakin-MG38-Warzone-2.jpeg"] {
+    max-width: 100%;
+    height:auto;
+  }
+
+  img[src = "/static/assets/best-modern-warfare-2-m4-loadout-attachments-perks.jpg"] {
+    max-width: 100%;
+    height:auto;
+  }
+
+  img[src = "/static/assets/Best-PDSW-528-loadout-in-Warzone-2 copy 2.jpg"] {
+    max-width: 100%;
+    height:auto;
+  }
+  img[src = "/static/assets/best-mp5-lachmann-sub-loadout.jpg"] {
+    max-width: 100%;
+    height:auto;
+  }
+  img[src = "/static/assets/best-modern-warfare-2-sp-x-80-loadout-attachments-perks.jpg"] {
+    max-width: 800px;
+    height:auto;
+  }
+  img[src = "/static/assets/signal-50-best-loadout-modern-warfare-2-e1667558715325.jpg"] {
+    max-width: 100%;
+    height:auto;
+  }
+
+  img[src = "/static/assets/vecteezy_bullet-vector-icon-isolated-on-white-background_6600004.jpg"] {
+    max-width: 6%;
+    height:auto;
+  }
+
+  .card {
+      height: 20px;
+      background: rgb(4,5,7);
+      box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
+   }
+   
+   .footer{
+    color:whitesmoke;
+    display: flex;
+    justify-content: space-around;
+   }
+  /* ----------------not my css and some fun things from google ---------------------------*/
   .input {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
     font-weight: 500;
@@ -203,17 +258,6 @@ label {
   .input:focus {
     box-shadow: 0 0 0 .15vw skyblue;
   }
-
-  footer{
-    color: whitesmoke;
-    align-items: end;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-
-  /* not my css and some fun things from google */
-
   .btn {
     cursor: pointer;
     width: 50px;
@@ -343,52 +387,6 @@ label {
 }
 
 
-  img[src = "/static/assets/call-of-duty-warzone-2-iso-hemlock-loadout.jpg"] {
-    max-width: 80%;
-    height:auto;
-  }
-  img[src = "/static/assets/Sakin-MG38-Warzone-2.jpeg"] {
-    max-width: 100%;
-    height:auto;
-  }
 
-  img[src = "/static/assets/best-modern-warfare-2-m4-loadout-attachments-perks.jpg"] {
-    max-width: 100%;
-    height:auto;
-  }
-
-  img[src = "/static/assets/Best-PDSW-528-loadout-in-Warzone-2 copy 2.jpg"] {
-    max-width: 100%;
-    height:auto;
-  }
-  img[src = "/static/assets/best-mp5-lachmann-sub-loadout.jpg"] {
-    max-width: 100%;
-    height:auto;
-  }
-  img[src = "/static/assets/best-modern-warfare-2-sp-x-80-loadout-attachments-perks.jpg"] {
-    max-width: 800px;
-    height:auto;
-  }
-  img[src = "/static/assets/signal-50-best-loadout-modern-warfare-2-e1667558715325.jpg"] {
-    max-width: 100%;
-    height:auto;
-  }
-
-  img[src = "/static/assets/vecteezy_bullet-vector-icon-isolated-on-white-background_6600004.jpg"] {
-    max-width: 6%;
-    height:auto;
-  }
-
-  .card {
-      height: 20px;
-      background: rgb(4,5,7);
-      box-shadow: 15px 15px 30px rgb(25, 25, 25), -15px -15px 30px rgb(60, 60, 60);
-   }
-   
-   .footer{
-    color:whitesmoke;
-    display: flex;
-    justify-content: space-around;
-   }
 
   
