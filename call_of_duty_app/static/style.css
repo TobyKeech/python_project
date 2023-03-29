@@ -10,11 +10,11 @@ select{
 }
 ul{
     color: whitesmoke;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 li{
     color:#FFFFFF;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 a{
     cursor: pointer;
@@ -26,11 +26,12 @@ h1{
     align-items: center;
     list-style-type: none;
     color: #FFFFFF;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 
 h2{
   color: whitesmoke;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 .profileshow
 {
@@ -162,7 +163,7 @@ b{
 
 label {
   display: inline-block;
-  width: 100px;
+  width: 185px;
   text-align: right;
 }
 
@@ -181,6 +182,7 @@ label {
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   }
   img[src = "/static/assets/call-of-duty-warzone-2-iso-hemlock-loadout.jpg"] {
     max-width: 80%;
@@ -228,8 +230,9 @@ label {
     color:whitesmoke;
     display: flex;
     justify-content: space-around;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
    }
-
+   
    .radartext{
     color: whitesmoke;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
@@ -253,10 +256,10 @@ label {
     color: #fff;
     background-color: rgb(28,28,30);
     box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
-    border-radius: 0.4vw;
+    border-radius: 0.35vw;
     border: none;
     outline: none;
-    padding: 0.7vw;
+    padding: 0.33vw;
     max-width: 190px;
     transition: .4s;
     width: fit-content;
