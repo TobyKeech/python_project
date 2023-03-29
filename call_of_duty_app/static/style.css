@@ -185,7 +185,7 @@ label {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
   }
   img[src = "/static/assets/call-of-duty-warzone-2-iso-hemlock-loadout.jpg"] {
-    max-width: 80%;
+    max-width: 70%;
     height:auto;
   }
   img[src = "/static/assets/Sakin-MG38-Warzone-2.jpeg"] {
@@ -203,11 +203,11 @@ label {
     height:auto;
   }
   img[src = "/static/assets/best-mp5-lachmann-sub-loadout.jpg"] {
-    max-width: 100%;
+    max-width: 80%;
     height:auto;
   }
   img[src = "/static/assets/best-modern-warfare-2-sp-x-80-loadout-attachments-perks.jpg"] {
-    max-width: 800px;
+    max-width: 100%;
     height:auto;
   }
   img[src = "/static/assets/signal-50-best-loadout-modern-warfare-2-e1667558715325.jpg"] {
