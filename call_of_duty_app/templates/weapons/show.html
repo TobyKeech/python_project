@@ -4,7 +4,7 @@
         <h1>{{solo_weapon.name}}</h1>
         <div class="invweaponprofile">
             <div class="invweaponshow">
-                <div>
+                <div class="div2">
                 {% if solo_weapon.name == "ISO Hemlock"%}
                         <img src = "/static/assets/call-of-duty-warzone-2-iso-hemlock-loadout.jpg">
                         {% elif solo_weapon.name == "Sakin" %}
@@ -22,10 +22,11 @@
 
                   {% endif %}
                 </div>
+            <div class="weapontext">
         <p><b>Type</b> : {{solo_weapon.type}}</p>
-        <p><b>Ammo </b> : {{solo_weapon.ammo}} <img src="/static/assets/vecteezy_bullet-vector-icon-isolated-on-white-background_6600004.jpg"></p>
         <p><b>Range</b> : {{solo_weapon.range}}</p>
-
+        <p><b>Ammo </b> : {{solo_weapon.ammo}} <img src="/static/assets/vecteezy_bullet-vector-icon-isolated-on-white-background_6600004.jpg"></p>
+        </div>
             </div>
         </div>
 </div>

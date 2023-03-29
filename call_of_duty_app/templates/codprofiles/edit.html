@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="newindvprofile">
+<div class="indvprofile">
 <h2>Update a Cod Profile</h2>
-  <div class="newprofileform">
+  <div class="profileform">
     <div class="div2">
 
-<form action="/codprofiles/{{ codprofile.id }}" method="POST">
+<form action="/codprofiles/{{ codprofile.id }}" method="POST" class="newform">
     <div>
         <label for="gamer_tag"> <b>Change Gamer Tag</b>:</label>
         <input type="text" id="gamer_tag" name="gamer_tag" value="{{ codprofile.gamer_tag }}" class="input">
@@ -45,7 +45,7 @@
           {% endfor %}
         </select>
     </div>
-    <button class="button2" type="submit"> Update </button>
+    <button class="button3" type="submit"> Update </button>
     </div>
   </div>
   </div>
