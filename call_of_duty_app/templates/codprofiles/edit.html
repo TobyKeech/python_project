@@ -16,7 +16,10 @@
         <select id="platform" name="platform_id" class="input">
           <option value =' '>Update Platform</option>
           {% for platform in all_platforms %}
-            <option value="{{ platform.id }}">{{ platform.type }} </option>
+            <option value="{{ platform.id }}"
+              {% if codprofile.platform.id == platform.id %} selected = "selected" {% endif %}>
+              {{ platform.type }} 
+            </option>
           {% endfor %}
         </select>
     </div>
@@ -41,7 +44,10 @@
         <select id="weapon" name="weapon_id" class="input">
           <option value =' '> Update Weapon</option>
           {% for weapon in all_weapons %}
-            <option value="{{ weapon.id }}">{{ weapon.name }}, {{weapon.type}} </option>
+            <option value="{{ weapon.id }}"
+            {% if codprofile.weapon.id == weapon.id %} selected = "selected" {% endif %}>
+            {{weapon.name}}, {{weapon.type}}
+          </option>
           {% endfor %}
         </select>
     </div>
