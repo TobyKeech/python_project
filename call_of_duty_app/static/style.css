@@ -236,8 +236,16 @@ label {
     padding:10px;
    }
 
+   hr {
+    height: 2px;
+    background-color: #F15E63;
+    border: none;
+  }
 
   /* ----------------not my css and some fun things from google ---------------------------*/
+
+  /*Source: https://uiverse.io/ */
+  
   .input {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
     font-weight: 500;
