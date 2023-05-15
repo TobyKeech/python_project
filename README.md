@@ -11,3 +11,11 @@ Be able to add profiles to the tracker
 Be able to display a KD ratio for a profile 
 Be able to set a profile as rank prestige or not
 
+Running instructions:
+
+1) git clone the repositoriy to your own local. 
+2) install a version of python3
+3) intall a version of flask on your local
+4) python3 run flask
+5) got to localhost3000 on your browser
+
