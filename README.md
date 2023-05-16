@@ -19,7 +19,7 @@ Be able to set a profile as rank prestige or not
     - psychopg2 (`pip3 psychopg2`)
     - postgres
 - dbcreate shopping_list
-- if you want to set up some test data, `run psql -d shopping_list -f shopping_list.sql`
+- if you want to set up some test data, `run psql -d call_of_duty -f stats_tracker.sql`
 - navigate to the main directory, and type `flask run`
 - in Chrome, use the url localhost:4999 (this is the default - check your terminal session - it will tell you which localhost port it's using)
 
