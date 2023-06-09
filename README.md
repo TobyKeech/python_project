@@ -6,7 +6,7 @@ Call of Duty Stats Tracker You’ve been tasked with making an app tracker syste
 You should be able to create a Cod Profile with a user, gamer tag, kills, deaths, rank, weapon. You will also have a User with a first name, last name and age. Finally you will also create a Weapon which will have a user, name, type, ammo and range.
 There should be a page where you can see all Profiles and be able to click through to each profile to see the details where you should be able to edit or delete the profile and populate with new information.
 
-## Extensions: 
+## Extensions
 Be able to add profiles to the tracker 
 Be able to display a KD ratio for a profile 
 Be able to set a profile as rank prestige or not
@@ -23,7 +23,7 @@ Be able to set a profile as rank prestige or not
 - navigate to the main directory, and type `flask run`
 - in Chrome, use the url localhost:4999 (this is the default - check your terminal session - it will tell you which localhost port it's using)
 
-## Example: 
+## Example
 Static images of the application when running:
 <img width="1440" alt="Screenshot 2023-06-09 at 09 13 38" src="https://github.com/TobyKeech/python_project/assets/124391586/b9cbb96c-022a-4641-afd2-3787634b3e92">
 <img width="1440" alt="Screenshot 2023-06-09 at 09 13 56" src="https://github.com/TobyKeech/python_project/assets/124391586/32f3de2b-422c-4f30-8b5a-d5dd168f6f95">
