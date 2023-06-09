@@ -23,3 +23,15 @@ Be able to set a profile as rank prestige or not
 - navigate to the main directory, and type `flask run`
 - in Chrome, use the url localhost:4999 (this is the default - check your terminal session - it will tell you which localhost port it's using)
 
+## Example: 
+Static images of the application when running:
+<img width="1440" alt="Screenshot 2023-06-09 at 09 13 38" src="https://github.com/TobyKeech/python_project/assets/124391586/b9cbb96c-022a-4641-afd2-3787634b3e92">
+<img width="1440" alt="Screenshot 2023-06-09 at 09 13 56" src="https://github.com/TobyKeech/python_project/assets/124391586/32f3de2b-422c-4f30-8b5a-d5dd168f6f95">
+<img width="1440" alt="Screenshot 2023-06-09 at 09 14 09" src="https://github.com/TobyKeech/python_project/assets/124391586/68190578-c105-48fc-9349-df53b19513bd">
+<img width="1440" alt="Screenshot 2023-06-09 at 09 14 20" src="https://github.com/TobyKeech/python_project/assets/124391586/22fd95c8-aefa-41c1-afaa-b4c22c372698">
+<img width="1440" alt="Screenshot 2023-06-09 at 09 14 28" src="https://github.com/TobyKeech/python_project/assets/124391586/8aa7b128-52d7-40ce-ba13-bcaad1b2b711">
+
+
+
+
+
